@@ -17,6 +17,9 @@ body, html {
   font-family: "proximanova_regular";
   color: white;
   background-color: black;
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .Banner {
