@@ -81,6 +81,22 @@ body, html {
   border: none;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:visited {
+    color: #000000;
+}
+
+.Iniciar a {
+    text-decoration: none;
+}
+
+.Iniciar a:visited {
+    color: #000000;
+}
+
 .search-icon {
   color: white;
   background: none;
@@ -203,6 +219,14 @@ footer.footer {
     font-weight: bold;
     padding: 2px 4px;
     margin-right: 4px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+}
+
+.footer-logo a:visited {
+    color: #000000;
 }
 
 .footer-links a {
