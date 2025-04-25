@@ -8,40 +8,112 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <nav class="navbar">
+          <div class="nav-left">
+            <a href="#">Navegar</a>
+            <a href="#">Comunidad</a> 
+            <a href="#">Populares</a>
+          </div>
+          <div class="logo"><a href="index.html">KITH</a></div>
+          <div class="nav-right">
+            <button class="Publicar">Publicar</button>
+            <button class="Iniciar"><a href="login.html">Iniciar sesión</a></button>
+            <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </nav>
+    </header>
+    <div class="Banner">
+        <div class="globoBanner">
+          <div class="globoBanner-content">
+            <p>texto prueba</p>
+            <h1>TEXTO PRUEBA</h1>
+            <div class="globoBanner-meta">
+              <span>Autor</span>
+              <button>MÁS INFORMACIÓN</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
     <div class="SD">
         <p>Series destacadas</p>
-        <p>Titulo</p>
+        <p>VIDEOS DE PRUEBA PARA EL AVANCE</p>
+
         <table border="0" class="tblSD">
             <tr>
-                <td colspan="2" class="tdLeft"><img src="https://i.ytimg.com/vi/kHL0ebI9bOQ/maxresdefault.jpg" alt="img"></td>
-                <td colspan="2" class="tdRight"><img src="https://i.ytimg.com/vi/kHL0ebI9bOQ/maxresdefault.jpg" alt="img"></td>
+                <td colspan="2" class="tdLeft video-container">
+                    <iframe width="692.5" height="495" src="https://www.youtube.com/embed/Bj_bhOp3F74?autoplay=1&mute=1" title="Gachiakuta | TRÁILER OFICIAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td colspan="2" class="tdRight video-container">
+                    <iframe width="692.5" height="495" src="https://www.youtube.com/embed/Bj_bhOp3F74?autoplay=1&mute=1" title="Gachiakuta | TRÁILER OFICIAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
             </tr>
             <tr class="trText">
-                <td colspan="2">Titulo de obra</td>
-                <td colspan="2">Titulo de obra</td>
+                <td colspan="2">VIDEO DE PRUEBA</td>
+                <td colspan="2">VIDEO DE PRUEBA</td>
             </tr>
             <tr class="trText">
                 <td>Autor: @</td>
-                <td><button class="btnFrame">Leer</button></td>
+                <td><button class="btnFrame">VER</button></td>
                 <td>Autor: @</td>
-                <td><button class="btnFrame">Leer</button></td>
+                <td><button class="btnFrame">VER</button></td>
             </tr>
             <tr>
-                <td colspan="2" class="tdLeft"><img src="https://i.ytimg.com/vi/kHL0ebI9bOQ/maxresdefault.jpg" alt="img"></td>
-                <td colspan="2" class="tdRight"><img src="https://i.ytimg.com/vi/kHL0ebI9bOQ/maxresdefault.jpg" alt="img"></td>
+                <td colspan="2" class="tdLeft video-container">
+                    <iframe width="692.5" height="495" src="https://www.youtube-nocookie.com/embed/Bj_bhOp3F74?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
+                <td colspan="2" class="tdRight video-container">
+                    <iframe width="692.5" height="495" src="https://www.youtube-nocookie.com/embed/Bj_bhOp3F74?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </td>
             </tr>
             <tr class="trText">
-                <td colspan="2">Titulo de obra</td>
-                <td colspan="2">Titulo de obra</td>
+                <td colspan="2">VIDEO DE PRUEBA</td>
+                <td colspan="2">VIDEO DE PRUEBA</td>
             </tr>
             <tr class="trText">
                 <td>Autor: @</td>
-                <td><button class="btnFrame">Leer</button></td>
+                <td><button class="btnFrame">VER</button></td>
                 <td>Autor: @</td>
-                <td><button class="btnFrame">Leer</button></td>
+                <td><button class="btnFrame">VER</button></td>
             </tr>
 
         </table>
     </div>
+    
+    <footer class="footer">
+        <hr><br>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>
+            <div class="footer-logo"><a href="index.html">KITH</a></div>
+            GRUPO, (NOMBRE DEL PROYECTO). TODOS LOS DERECHOS RESERVADOS. 2025 ©
+        </p>
+        <p class="footer-links">
+            <a href="#">PRIVACY POLICY</a> |
+            <a href="#">TERMS & CONDITIONS</a>
+        </p>
+    </footer>
+
+    <script>
+        const audio = new Audio('sonido.ogg');
+      
+        const logo = document.querySelector('.logo a');
+      
+        logo.addEventListener('click', function(event) {
+          event.preventDefault();
+          audio.play();
+          
+          setTimeout(function() {
+            window.location.href = 'index.html';
+          }, 500); 
+        });
+    </script>
+
 </body>
 </html>

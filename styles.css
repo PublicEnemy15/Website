@@ -1,52 +1,349 @@
 @font-face{
-    font-family: "proximanova-bold";
-    src: url('fuentes/proximanova_bold.otf');
+  font-family: "proximanova-bold";
+  src: url('fuentes/proximanova_bold.otf');
 }
 @font-face{
-    font-family: "proximanova_regular";
-    src: url('fuentes/proximanova_regular.ttf');
+  font-family: "proximanova_regular";
+  src: url('fuentes/proximanova_regular.ttf');
 }
 
-body{
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "proximanova-bold";
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-.SD{
-    margin-left: 22.39%;
-    margin-right: 22.39%;
-    width: auto;
+body, html {
+font-family: "proximanova_regular";
+color: white;
+background-color: black;
+display: grid;
+min-height: 100dvh;
+grid-template-rows: auto 1fr auto;
 }
 
-.tblSD{
-    width: 100%;
+.Banner {
+display: flex;
+justify-content: flex-start; 
+align-items: flex-start;     
+height: 692px;
+padding: 0;
+background-image: url("2.webp"); 
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%; 
+border-bottom: 1px solid white;
 }
 
-td{
-    padding: 7.5px;
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 13px 50px;
+color: black;
+background-color: black;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 10;
+border-bottom: 1px solid white;
 }
 
-td img{
-    width: 100%;
-    border: #FFFFFF;
-    border-style: inset;
-    border-style: solid;
-    border-width: 3px;
+.nav-left a {
+margin: 0 10px;
+text-decoration: none;
+color: white;
+background: none;
+border: none;
+font-size: 16px;
+cursor: pointer;
 }
 
-.btnFrame{
-    color: #FFFFFF;
-    border-radius: 0%;
-    border-color: #FFFFFF;
-    background-color: rgba(0,0,0,0);
-    border-style: solid;
-    border-width: 2px;
-    display: block;
-    float: right;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    cursor: pointer;
+.nav-right button {
+margin: 0 10px;
+text-decoration: none;
+cursor: pointer;
+font-size: 16px;
 }
+
+.Publicar  {
+padding: 7px 20px;
+color: white;
+background-color: black;
+border: 1px solid white;
+}
+
+.Iniciar {
+padding: 7px 20px;
+color: black;
+background: white;
+border: none;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a:visited {
+  color: black;
+}
+
+.Iniciar a {
+  text-decoration: none;
+}
+
+.Iniciar a:visited {
+  color: black;
+}
+
+.search-icon {
+color: white;
+background: none;
+border: none;
+}
+
+.logo {
+font-weight: bold;
+font-size: 24px;
+color: black;
+background-color: white;
+padding: 1px 5px;
+display: inline-block;
+}
+
+.globoBanner {
+margin-left: 260px;
+margin-top: 543px; 
+text-align: left;
+background: none;
+}
+
+.globoBanner-content {
+background-color: white;
+color: black;
+padding: 20px 40px;
+max-width: 600px;
+border: 3px solid black;
+}
+
+.globoBanner-content h1 {
+font-size: 32px;
+margin: 10px 0;
+}
+
+.globoBanner-meta {
+display: flex;
+justify-content: space-between;
+align-items: center;      
+margin-top: 10px;
+}
+
+.globoBanner-meta span {
+color: black;
+font-size: 16px;
+}
+
+.globoBanner-meta button {
+padding: 10px 20px;
+background-color: black;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+/* Estilos para la tabla de series destacadas */
+.SD {
+  margin-left: 260px;
+  margin-right: 22.39%;
+  margin-top: 5%;
+  width: auto;
+}
+
+.tblSD {
+  width: 100%;
+}
+
+td {
+  padding: 7.5px;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover iframe {
+  pointer-events: all;
+}
+
+.video-thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.btnFrame {
+  color: #FFFFFF;
+  border-radius: 0%;
+  border-color: #FFFFFF;
+  background-color: rgba(0,0,0,0);
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  float: right;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+footer.footer {
+  background-color: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-logo {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+}
+
+.footer-logo a:visited {
+  color: #000000;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video {
+  pointer-events: none;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+/* Estilos para el login */
+.login {
+  min-height: 80dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.olvidar-password {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.olvidar-password a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.boton {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.crear-cuenta {
+  text-align: center;
+  font-size: 14px;
+}
+
+.crear-cuenta a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
